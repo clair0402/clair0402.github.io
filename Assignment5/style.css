@@ -1,0 +1,461 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #1C2252;
+    background-color: #FCF5EB;
+}
+
+/*********** HEADER ************/
+
+/*the following code is inspired by tutorial: https://www.youtube.com/watch?v=hp-LP8Nv18s*/
+
+#navigation-bar {
+    width: 100%;
+    position: relative;
+}
+.inner-navigation ul{
+    margin:0;
+    padding:20px;
+    list-style: none;
+    text-align: right;
+    background-color: #C59A6D;
+}
+
+.inner-navigation ul li{
+    float:none;
+    display: inline-block;
+}
+
+.inner-navigation ul li:nth-child(1){
+    float:left;
+}
+.inner-navigation ul li:nth-child(2){
+    float:left;
+}
+
+.inner-navigation ul li a{
+    color: #FCF5EB;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding:10px;
+}
+.inner-navigation ul li a:hover{
+    color: #EBD9C1;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+    margin-left: -50px;
+    position: absolute;
+    left: 50%;
+    top:20px;
+    content:" ";
+}
+
+/*********** Horizontal Gallery ************/
+
+.slideshow-container{
+    position: center;
+    width: 100%;
+    height: 30%;
+    padding-top:50px;
+}
+
+.mySlides {
+    float: left;
+    width: 33%;
+    /*position: center;*/
+}
+
+.roll1{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.5;
+}
+
+.roll2{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.roll3{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.5;
+}
+
+.Rollname {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+}
+
+
+
+/*********** Add Action ************/
+.buninfo {
+    margin: auto;
+    float: center;
+    width: 33%;
+}
+
+.price{
+    float: left;
+    margin-right: 10%;
+    margin-left: 10px;
+}
+
+.bun-qty{
+    width:100%;
+}
+
+#qty {
+    margin: 2%;
+    width: 50%;
+    font-size: 16px;
+    border: 2px solid #C59A6D;
+    height: 30px;
+}
+
+#qty.hover{
+    border-color: #FEFBF7;
+}
+
+.bun-glazing{
+    margin: 10px;
+    width: 100%;
+}
+
+#glazing{
+    width: 75%;
+    font-size: 16px;
+    border: 2px solid #C59A6D;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.button1 {
+  background-color: #C59A6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px 10px 20px;
+  cursor: pointer;
+  width: 90%;
+}
+
+.buninfo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*********** Tracking ************/
+.Tracking{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #C59A6D;
+    margin-top:0px;
+}
+
+.ruler {
+    position: relative;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: 20%;
+    height: 14px;
+}
+    .ruler .cm{
+    position: absolute;
+    border-left: 3px solid #C59A6D;
+    height: 14px;
+    width: 40%;
+}
+
+.ruler .cm:after {
+    position: absolute;
+    bottom: 20px;
+    color: #C59A6D;
+    font-size: 16px;
+}
+
+.ruler .cm:nth-of-type(1) {
+ left: 0%;
+}
+.ruler .cm:nth-of-type(1):after {
+ content: "1 Roll *Minimum*";
+}
+.ruler .cm:nth-of-type(2) {
+ left: 20%;
+}
+.ruler .cm:nth-of-type(2):after {
+ content: "3 Rolls *Free Shipping*";
+}
+.ruler .cm:nth-of-type(3) {
+ left: 40%;
+}
+.ruler .cm:nth-of-type(3):after {
+ content: "6 Rolls *10% Off*";
+}
+.ruler .cm:nth-of-type(4) {
+ left: 60%;
+}
+.ruler .cm:nth-of-type(4):after {
+ content: "12 Rolls";
+}
+
+/*********** About ************/
+.About{
+    margin: 10%;
+    float: center;
+    padding: 50px;
+}
+
+.About-image{
+    width:300px;
+    float: left;
+    padding: 50px;
+}
+
+.About-text{
+    width:100%;
+    vertical-align: middle;
+}
+
+
+/*********** Products ************/
+.Pagetitle{
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    margin-top: 80px;
+}
+/*********** Gallery ************/
+.product-grid{
+    margin-top:5%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns:  repeat(3, 460px);
+    grid-template-rows: repeat(2, 450px);
+    align-items: center;
+}
+
+.product {
+    margin: 10rem auto;
+}
+
+.product-img {
+    width:300px;
+    opacity: 1;
+}
+
+.product-img:hover {
+    opacity: 0.8;
+}
+
+.product-title{
+    margin-top: 10px;
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    position: relative;
+    text-align: center;
+
+}
+
+.product-info{
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.product-price{
+    color:#F0572E;
+    text-align: center;
+}
+
+.button2 {
+  background-color: #C59A6D;
+  border: none;
+  color: white;
+  padding: 3% 3%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 10px 6px 20px;
+  cursor: pointer;
+  width: 90%;
+}
+
+/*********** Single Product ************/
+/*********** Original ************/
+/*********** Info ************/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+}
+
+.productname{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+}
+
+/*********** Left Col ************/
+.left-column {
+    width: 65%;
+    position: relative;
+}
+
+.right-column {
+    width: 35%;
+    margin-top: 60px;
+}
+
+.left-column img {
+    width: 75%;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.product-description {
+    width: 75%;
+    margin: auto;
+}
+/*********** Right Col ************/
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin: 10px;
+}
+
+.smalltag{
+    background-color: #C59A6D;
+    padding: 5px;
+    color: #FCF5EB;
+    width: 100px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.process-description {
+    width: 75%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 100px;
+}
+
+.right-column2 {
+    margin-top: 60px;
+    width: 35%;
+}
+
+.right-column2 img {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+
+/*********** Footer ************/
+.inner-footer{
+    width:100%;
+    background-color: #FEFBF7;
+    margin-top: 50px;
+}
+
+#sociallinks{
+    width: 40px;
+    padding:10px;
+    float: left;
+    margin-left:60%;
+}
+
+#AboutBunBun{
+    margin-top:20px;
+    padding-left:50px;
+}
+
+#contactus{
+    margin-top:20px;
+    float: right;
+}
+
+#BunBunPrivacy{
+    margin-top:20px;
+    margin-left:20%;
+}
+
+.inner-footer ul{
+    padding-top:20px;
+    list-style: none;
+    text-align: right;
+    list-style: none;
+    width:90%;
+
+}
+
+.inner-footer ul li a{
+    color: #C59A6D;
+    font-size: 16px;
+    text-decoration: none;
+    float: left;
+}
+
+/*.inner-footer ul li:nth-child(1){
+    float:left;
+}
+.inner-footer ul li:nth-child(2){
+    float:left;
+}
+.inner-footer ul li:nth-child(3){
+    float:left;
+}
+.inner-footer ul li:nth-child(4){
+    float:left;
+}
+
+.inner-footer ul li:nth-child(6){
+    float:left;
+}*/
+
+.inner-footer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
