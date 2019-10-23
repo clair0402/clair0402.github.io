@@ -87,5 +87,10 @@ function onClick (){
 
 function loadCart(){
     var globalL = localStorage.getItem("len");
-    document.getElementById("cart").getElementsByTagName('a')[0].textContent = "Cart (" + globalL + ")";
+    console.log(globalL)
+    if (globalL == null){
+        document.getElementById("cart").getElementsByTagName('a')[0].textContent = "Cart (" + 0 + ")";
+    }else{
+        document.getElementById("cart").getElementsByTagName('a')[0].textContent = "Cart (" + globalL + ")";
+    }
 }
