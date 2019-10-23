@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ViewCart</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="SingleProduct.js" type="text/javascript"></script>
+</head>
+
+<body onload="loadCart()">
+
+    <div id="navigation-bar">
+        <div class="inner-navigation">
+            <a href="Home.html"> <img class="logo" src="logo.png" alt="The Website Logo"> </a>
+            <ul>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="">Delivery Area</a></li>
+                <li><a href="">Create Account</a></li>
+                <li><a href="">Log in</a></li>
+                <li id = "cart"><a href="Viewcart.html">Your Cart</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!-- Product & its info -->
+    <h5 class="progressbar">Cart  >  Info  >  Shipping  >  Payment</h5>
+    <div class="cartcontainer">
+    <!-- Product Section -->
+        <div class="productcolumn">
+            <a href="SingleProduct.html"><img id="listingimg1" src="Original.png" alt="The Original Cinnimon"></a>
+            <div class="inline-child">
+                <h4 id="product-name1">The Original</h4>
+            </div>
+
+            <section class="inline-child">
+                <label for="qty1">Quantity</label>
+                <select name="qty" id="qty1">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </section>
+
+            <section class="inline-child">
+                <label for="glazing1">Glazing</label>
+                <select name="glazing" id="glazing1">
+                    <option value="None">None</option>
+                    <option value="Sugar-milk">Sugar-milk</option>
+                    <option value="Vanilla-milk">Vanilla-milk</option>
+                    <option value="Double-chocolate">Double-chocolate</option>
+                  </select>
+            </section>
+
+            <h4 class="inline-child">Delete</h4>
+
+            <img id="listingimg2" src="Original.png" alt="The Original Cinnimon">
+            <div class="inline-child">
+                <h4 id="product-name2">The Original</h4>
+            </div>
+
+            <section class="inline-child">
+                <label for="qty2">Quantity</label>
+                <select name="qty" id="qty2">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </section>
+
+            <section class="inline-child">
+                <label for="glazing2">Glazing</label>
+                <select name="glazing" id="glazing2">
+                    <option value="None">None</option>
+                    <option value="Sugar-milk">Sugar-milk</option>
+                    <option value="Vanilla-milk">Vanilla-milk</option>
+                    <option value="Double-chocolate">Double-chocolate</option>
+                </select>
+            </section>
+            <h4 class="inline-child">Delete</h4>
+        </div>
+
+        <div class="check-out-column">
+            <div class="inline">
+                <h4 class="inline-child">Subtotal</h4>
+                <h4 class="inline-child2">$9.99</h4>
+            </div>
+            <div class="inline">
+                <h4 class="inline-child">Tax</h4>
+                <h4 class="inline-child2">--</h4>
+            </div>
+            <div class="inline">
+                <h4 class="inline-child">Shipping</h4>
+                <h4 class="inline-child2">Free</h4>
+            </div>
+
+            <div class="divider">
+            </div>
+
+            <div class="inline">
+                <h4 class="inline-child">Order Total</h4>
+                <h4 class="inline-child2">$9.99</h4>
+            </div>
+        </div>
+
+    </div>
+    <button class="button3">Add to Cart</button>
+
+    <!-- Footer -->
+    <div class="inner-footer">
+    <ul>
+        <li><a id="AboutBunBun" href="">About BunBun</a></li>
+        <li><a href=""> <img id="sociallinks1" src="fb.png" alt="Facebook icon"> </a><li>
+        <li><a href=""> <img id="sociallinks2" src="snapchat.png" alt="Snapchat icon"> </a><li>
+        <li><a href=""> <img id="sociallinks3" src="ins.png" alt="Instagram icon"> </a><li>
+        <li><a id="BunBunPrivacy" href="">BunBun @ 2018 Privacy</a></li>
+        <li><a id="contactus" href="">Contact Us</a></li>
+
+    </ul>
+    </div>
+
+</body>
+
+
+</html>

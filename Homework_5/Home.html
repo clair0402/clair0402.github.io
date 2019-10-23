@@ -9,9 +9,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="SingleProduct.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body onload="loadCart()">
     <div id="navigation-bar">
         <div class="inner-navigation">
             <a href="Home.html"> <img class="logo" src="logo.png" alt="The Website Logo"> </a>
@@ -20,7 +21,7 @@
                 <li><a href="">Delivery Area</a></li>
                 <li><a href="">Create Account</a></li>
                 <li><a href="">Log in</a></li>
-                <li><a href="">Your Cart</a></li>
+                <li id = "cart"><a href="Viewcart.html">Your Cart</a></li>
             </ul>
         </div>
     </div>
@@ -51,8 +52,8 @@
     <div class="buninfo">
         <p class="price">Price  $3.99</p>
         <section class="bun-qty">
-            <label for="qty">Qty</label>
-            <select name="qty" id="qty">
+            <label for="qty1">Qty</label>
+            <select name="qty" id="qty1">
                 <option value="1">1</option>
                 <option value="3">3</option>
                 <option value="6">6</option>
@@ -60,8 +61,8 @@
             </select>
         </section>
         <section class="bun-glazing">
-          <label for="glazing">Glazing</label>
-          <select name="glazing" id="glazing">
+          <label for="glazing1">Glazing</label>
+          <select name="glazing" id="glazing1">
             <option value="None">None</option>
             <option value="Sugar-milk">Sugar-milk</option>
             <option value="Vanilla-milk">Vanilla-milk</option>

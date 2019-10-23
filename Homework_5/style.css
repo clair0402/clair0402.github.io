@@ -115,11 +115,21 @@ body {
     margin-left: 10px;
 }
 
-.bun-qty{
-    width:100%;
+#priceN{
+    float: left;
 }
 
-#qty {
+#aprice{
+    float: left;
+    margin-left: 5px;
+}
+
+/*.bun-qty{
+    width:100%;
+}
+*/
+
+#qty1, #qty2 {
     margin: 2%;
     width: 50%;
     font-size: 16px;
@@ -136,7 +146,7 @@ body {
     width: 100%;
 }
 
-#glazing{
+#glazing1, #glazing2{
     width: 75%;
     font-size: 16px;
     border: 2px solid #C59A6D;
@@ -145,6 +155,19 @@ body {
 }
 
 .button1 {
+  background-color: #C59A6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px 10px 20px;
+  cursor: pointer;
+  width: 90%;
+}
+#button1{
   background-color: #C59A6D;
   border: none;
   color: white;
@@ -323,7 +346,7 @@ body {
     display: flex;
 }
 
-.productname{
+.h2{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
@@ -388,6 +411,7 @@ body {
 }
 
 
+
 /*********** Footer ************/
 .inner-footer{
     width:100%;
@@ -447,23 +471,6 @@ body {
     float: left;
 }
 
-/*.inner-footer ul li:nth-child(1){
-    float:left;
-}
-.inner-footer ul li:nth-child(2){
-    float:left;
-}
-.inner-footer ul li:nth-child(3){
-    float:left;
-}
-.inner-footer ul li:nth-child(4){
-    float:left;
-}
-
-.inner-footer ul li:nth-child(6){
-    float:left;
-}*/
-
 .inner-footer::after {
   content: "";
   clear: both;
@@ -471,3 +478,78 @@ body {
 }
 
 
+/*******************ViewCart********************/
+.cartcontainer {
+    max-width: 85%;
+    margin: 5% auto;
+    padding: 15px;
+    display: flex;
+}
+
+.productcolumn{
+    margin:10px;
+    width:70%;
+    position: relative;
+}
+
+
+.progressbar{
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+#listingimg1, #listingimg2 {
+    width: 140px;
+    padding-top: 10px;
+    float:left;
+}
+
+.inline-child {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.inline-child2 {
+    display: inline-block;
+    float:right;
+    padding-right: 40px;
+}
+
+#product-name1, #product-name2{
+    padding: 30px;
+}
+
+.check-out-column{
+    width:30%;
+    height:300px;
+    border: 2px solid #C59A6D;
+    border-radius: 7px;
+
+}
+
+.inline{
+    padding-left:10px;
+}
+
+.divider{
+    width: 80%;
+    margin:auto;
+    border: 1.2px solid #C59A6D;
+}
+
+.button3{
+    background-color: #C59A6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 1050px;
+    cursor: pointer;
+    width: 20%;
+}
