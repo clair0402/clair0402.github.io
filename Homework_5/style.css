@@ -146,13 +146,6 @@ body {
     width: 100%;
 }
 
-#glazing1, #glazing2{
-    width: 75%;
-    font-size: 16px;
-    border: 2px solid #C59A6D;
-    height: 30px;
-    margin-left: 10px;
-}
 
 .button1 {
   background-color: #C59A6D;
@@ -166,6 +159,7 @@ body {
   margin: 10px 10px 10px 20px;
   cursor: pointer;
   width: 90%;
+  border-radius: 4px;
 }
 #button1{
   background-color: #C59A6D;
@@ -179,6 +173,7 @@ body {
   margin: 10px 10px 10px 20px;
   cursor: pointer;
   width: 90%;
+  border-radius: 4px;
 }
 
 .buninfo::after {
@@ -334,6 +329,7 @@ body {
   margin: 10px 20px 6px 20px;
   cursor: pointer;
   width: 90%;
+  border-radius: 4px;
 }
 
 /*********** Single Product ************/
@@ -410,6 +406,13 @@ body {
     margin-left: 50px;
 }
 
+#glazing1 {
+    margin: 2%;
+    width: 72%;
+    font-size: 16px;
+    border: 2px solid #C59A6D;
+    height: 30px;
+}
 
 
 /*********** Footer ************/
@@ -479,11 +482,18 @@ body {
 
 
 /*******************ViewCart********************/
-.cartcontainer {
-    max-width: 85%;
-    margin: 5% auto;
+.allInfo{
+    max-width:100%;
+    margin: 0 auto;
     padding: 15px;
     display: flex;
+}
+
+
+.cart-container {
+    max-width: 56%;
+    margin-left: 100px;
+    padding: 15px;
 }
 
 .productcolumn{
@@ -492,6 +502,31 @@ body {
     position: relative;
 }
 
+.cart-item {
+    width: 35%;
+}
+
+.cart-price {
+    width: 10%;
+}
+
+.cart-quantity {
+    width: 10%;
+}
+
+.cart-glazing {
+    width: 25%;
+}
+
+.deletePh{
+    width: 15%;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+}
 
 .progressbar{
     margin-top: 10%;
@@ -500,10 +535,14 @@ body {
 }
 
 
-#listingimg1, #listingimg2 {
+.listingimg1 {
     width: 140px;
     padding-top: 10px;
     float:left;
+}
+
+.cart-row {
+    display: flex;
 }
 
 .inline-child {
@@ -526,7 +565,7 @@ body {
     height:300px;
     border: 2px solid #C59A6D;
     border-radius: 7px;
-
+    margin:30px;
 }
 
 .inline{
@@ -552,4 +591,35 @@ body {
     margin-left: 1050px;
     cursor: pointer;
     width: 20%;
+    border-radius: 4px;
+}
+
+
+.cart-quantity-input {
+    margin: 2%;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid #C59A6D;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.removeButton {
+  background-color: #C59A6D;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: 80%;
+  height:40%;
+  /*margin-top: 45px;*/
+  border-radius: 4px;
+}
+
+.cart-item-title{
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
 }

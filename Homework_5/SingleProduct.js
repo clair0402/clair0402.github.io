@@ -2,15 +2,16 @@ var productpicture = ["Original.png", "Sugar-milk.png", "Vanilla-milk.png", "Dou
 var productPrice = ["$3.99", "$10.5", "$20", "$32"];
 //var bun =  [];
 
-function BunBun(name, glazing, price, quantity) {
+function BunBun(name, glazing, price, quantity, img) {
   this.name = name;
   this.glazing = glazing;
   this.price = price;
   this.quantity = quantity;
+  this.img = img;
 }
 
-function generateBun(name, dropdownG, price, dropdownQ){
-    return new BunBun(name, dropdownG, price, dropdownQ);
+function generateBun(name, dropdownG, price, dropdownQ, img){
+    return new BunBun(name, dropdownG, price, dropdownQ, img);
 }
 
 
@@ -24,6 +25,7 @@ function onLoad() {
     var dropdownG = document.getElementById("glazing1");
     var pImage = productpicture[dropdownG.selectedIndex]
     var price = productPrice[dropdownQ.selectedIndex];
+    var name = "Original Bun";
     //var
 
     //document.getElementById("button1").addEventListener("click", function() {
@@ -60,11 +62,14 @@ var cartItem = 0;
 
 function onClick (){
     var dropdownQ = document.getElementById("qty1");
+    var dropdownG = document.getElementById("glazing1");
     var price = productPrice[dropdownQ.selectedIndex];
     var quantity = document.getElementById("qty1").value;
     var glazing = document.getElementById("glazing1").value;
+    var img = productpicture[dropdownG.selectedIndex];
+    var name = "Original Bun";
 
-    var newbun = generateBun(name,glazing, price, quantity);
+    var newbun = generateBun(name,glazing, price, quantity, img);
 
     var bun = [];
 
@@ -73,24 +78,29 @@ function onClick (){
     }
 
     bun.push(newbun);
-    //localStorage.setItem("savedBun", JSON.stringify(bun));
 
     cartItem=bun.length;
     localStorage.setItem("len", JSON.stringify(cartItem));
     localStorage.setItem("bun", JSON.stringify(bun));
+    localStorage.setItem("img", JSON.stringify(img));
 
     var globalL = localStorage.getItem("len");
-    console.log(globalL);
+    //console.log(globalL);
     document.getElementById("cart").getElementsByTagName('a')[0].textContent = "Cart (" + globalL + ")";
 
 }
 
 function loadCart(){
     var globalL = localStorage.getItem("len");
-    console.log(globalL)
+    //console.log(globalL)
     if (globalL == null){
         document.getElementById("cart").getElementsByTagName('a')[0].textContent = "Cart (" + 0 + ")";
     }else{
         document.getElementById("cart").getElementsByTagName('a')[0].textContent = "Cart (" + globalL + ")";
     }
 }
+
+
+window.onload = function() {
+    placeImage(48);
+};
