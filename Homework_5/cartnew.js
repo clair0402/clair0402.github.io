@@ -2,7 +2,6 @@ var globalL = localStorage.getItem("len");
 var buns = JSON.parse(localStorage.getItem("bun"));
 
 function loadCart(){
-    var globalL = localStorage.getItem("len");
     //console.log(globalL)
     if (globalL == null){
         document.getElementById("cart").getElementsByTagName('a')[0].textContent = "Cart (" + 0 + ")";
@@ -42,12 +41,17 @@ function removeCartItem(event) {
 }
 
 function cartItems(){
-    for (i = 0; i <= globalL-1; i++){
-        imgs = buns[i].img;
-        title = "The Original";
-        price = buns[i].price;
-        qty = buns[i].quantity;
-        glazing = buns[i].glazing;
-        addItemToCart(imgs, title, price, qty, glazing)
+    if (globalL==null){
+        console.log("please add a product")
+    }else{
+
+        for (i = 0; i <= globalL-1; i++){
+            imgs = buns[i].img;
+            title = "The Original";
+            price = buns[i].price;
+            qty = buns[i].quantity;
+            glazing = buns[i].glazing;
+            addItemToCart(imgs, title, price, qty, glazing)
+        }
     }
 }
