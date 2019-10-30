@@ -2,16 +2,17 @@ var productpicture = ["Original.png", "Sugar-milk.png", "Vanilla-milk.png", "Dou
 var productPrice = ["$3.99", "$10.5", "$20", "$32"];
 //var bun =  [];
 
-function BunBun(name, glazing, price, quantity, img) {
+function BunBun(name, glazing, price, quantity, img, id) {
   this.name = name;
   this.glazing = glazing;
   this.price = price;
   this.quantity = quantity;
   this.img = img;
+  this.id = id
 }
 
-function generateBun(name, dropdownG, price, dropdownQ, img){
-    return new BunBun(name, dropdownG, price, dropdownQ, img);
+function generateBun(name, dropdownG, price, dropdownQ, img, id){
+    return new BunBun(name, dropdownG, price, dropdownQ, img, id);
 }
 
 
@@ -59,6 +60,7 @@ function onLoad() {
 
 
 var cartItem = 0;
+var nextID = 0;
 
 function onClick (){
     var dropdownQ = document.getElementById("qty1");
@@ -69,7 +71,17 @@ function onClick (){
     var img = productpicture[dropdownG.selectedIndex];
     var name = "Original Bun";
 
-    var newbun = generateBun(name,glazing, price, quantity, img);
+
+    if ("id" in localStorage) {
+        id = JSON.parse(localStorage.getItem("id"));
+        console.log(id);
+    }else{
+        id = 0;
+    }
+
+    var newbun = generateBun(name,glazing, price, quantity, img, id);
+    id += 1;
+    localStorage.setItem("id", JSON.stringify(id));
 
     var bun = [];
 
@@ -84,6 +96,7 @@ function onClick (){
     localStorage.setItem("bun", JSON.stringify(bun));
     localStorage.setItem("img", JSON.stringify(img));
 
+
     var globalL = localStorage.getItem("len");
     //console.log(globalL);
     document.getElementById("cart").getElementsByTagName('a')[0].textContent = "Cart (" + globalL + ")";
@@ -91,8 +104,8 @@ function onClick (){
 }
 
 function loadCart(){
-    var globalL = localStorage.getItem("len");
-    //console.log(globalL)
+    var buns = JSON.parse(localStorage.getItem("bun"));
+    var globalL = buns.length;
     if (globalL == null){
         document.getElementById("cart").getElementsByTagName('a')[0].textContent = "Cart (" + 0 + ")";
     }else{

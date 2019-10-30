@@ -491,7 +491,7 @@ body {
 
 
 .cart-container {
-    max-width: 56%;
+    width: 56%;
     margin-left: 100px;
     padding: 15px;
 }
