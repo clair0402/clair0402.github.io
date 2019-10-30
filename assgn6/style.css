@@ -1,0 +1,625 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #1C2252;
+    background-color: #FCF5EB;
+}
+
+/*********** HEADER ************/
+
+/*the following code is inspired by tutorial: https://www.youtube.com/watch?v=hp-LP8Nv18s*/
+
+#navigation-bar {
+    width: 100%;
+    position: relative;
+}
+.inner-navigation ul{
+    margin:0;
+    padding:20px;
+    list-style: none;
+    text-align: right;
+    background-color: #C59A6D;
+}
+
+.inner-navigation ul li{
+    float:none;
+    display: inline-block;
+}
+
+.inner-navigation ul li:nth-child(1){
+    float:left;
+}
+.inner-navigation ul li:nth-child(2){
+    float:left;
+}
+
+.inner-navigation ul li a{
+    color: #FCF5EB;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding:10px;
+}
+.inner-navigation ul li a:hover{
+    color: #EBD9C1;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+    margin-left: -50px;
+    position: absolute;
+    left: 50%;
+    top:20px;
+    content:" ";
+}
+
+/*********** Horizontal Gallery ************/
+
+.slideshow-container{
+    width: 100%;
+    height: 30%;
+    padding-top:50px;
+}
+
+.mySlides {
+    float: left;
+    width: 33%;
+    /*position: center;*/
+}
+
+.roll1{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.5;
+}
+
+.roll2{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.roll3{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.5;
+}
+
+.Rollname {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+}
+
+
+
+/*********** Add Action ************/
+.buninfo {
+    margin: auto;
+    width: 33%;
+}
+
+.price{
+    float: left;
+    margin-right: 10%;
+    margin-left: 10px;
+}
+
+#priceN{
+    float: left;
+}
+
+#aprice{
+    float: left;
+    margin-left: 5px;
+}
+
+/*.bun-qty{
+    width:100%;
+}
+*/
+
+#qty1, #qty2 {
+    margin: 2%;
+    width: 50%;
+    font-size: 16px;
+    border: 2px solid #C59A6D;
+    height: 30px;
+}
+
+#qty.hover{
+    border-color: #FEFBF7;
+}
+
+.bun-glazing{
+    margin: 10px;
+    width: 100%;
+}
+
+
+.button1 {
+  background-color: #C59A6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px 10px 20px;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 4px;
+}
+#button1{
+  background-color: #C59A6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px 10px 20px;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 4px;
+}
+
+.buninfo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*********** Tracking, Got inspiration from:https://codepen.io/pbweb/pen/grQKEK ************/
+.Tracking{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #C59A6D;
+    margin-top:0px;
+}
+
+.ruler {
+    position: relative;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: 20%;
+    height: 14px;
+}
+    .ruler .cm{
+    position: absolute;
+    border-left: 3px solid #C59A6D;
+    height: 14px;
+    width: 40%;
+}
+
+.ruler .cm:after {
+    position: absolute;
+    bottom: 20px;
+    color: #C59A6D;
+    font-size: 16px;
+}
+
+.ruler .cm:nth-of-type(1) {
+ left: 0%;
+}
+.ruler .cm:nth-of-type(1):after {
+ content: "1 Roll *Minimum*";
+}
+.ruler .cm:nth-of-type(2) {
+ left: 20%;
+}
+.ruler .cm:nth-of-type(2):after {
+ content: "3 Rolls *Free Shipping*";
+}
+.ruler .cm:nth-of-type(3) {
+ left: 40%;
+}
+.ruler .cm:nth-of-type(3):after {
+ content: "6 Rolls *10% Off*";
+}
+.ruler .cm:nth-of-type(4) {
+ left: 60%;
+}
+.ruler .cm:nth-of-type(4):after {
+ content: "12 Rolls";
+}
+
+/*********** About ************/
+.About{
+    margin: 10%;
+    padding: 50px;
+}
+
+.About-image{
+    width:300px;
+    float: left;
+    padding: 50px;
+}
+
+.About-text{
+    width:100%;
+    vertical-align: middle;
+}
+
+
+/*********** Products ************/
+.Pagetitle{
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    margin-top: 80px;
+}
+/*********** Gallery ************/
+.product-grid{
+    margin-top:5%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns:  repeat(3, 460px);
+    grid-template-rows: repeat(2, 450px);
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.product {
+    margin: 10rem auto;
+}
+
+.product-img {
+    width:300px;
+    opacity: 1;
+}
+
+.product-img:hover {
+    opacity: 0.8;
+}
+
+.product-title{
+    margin-top: 10px;
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    position: relative;
+    text-align: center;
+
+}
+
+.product-info{
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.product-price{
+    color:#F0572E;
+    text-align: center;
+}
+
+.button2 {
+  background-color: #C59A6D;
+  border: none;
+  color: white;
+  padding: 3% 3%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 20px 6px 20px;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 4px;
+}
+
+/*********** Single Product ************/
+/*********** Original ************/
+/*********** Info ************/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+}
+
+.h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+}
+
+/*********** Left Col ************/
+.left-column {
+    width: 65%;
+    position: relative;
+}
+
+.right-column {
+    width: 35%;
+    margin-top: 60px;
+}
+
+.left-column img {
+    width: 75%;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.product-description2 {
+    width: 75%;
+    margin: auto;
+    padding-top: 10px;
+}
+/*********** Right Col ************/
+.product-description {
+    margin: 10px;
+}
+
+.smalltag{
+    background-color: #C59A6D;
+    padding: 5px;
+    color: #FCF5EB;
+    width: 100px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.process-description {
+    width: 75%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 100px;
+}
+
+.right-column2 {
+    margin-top: 60px;
+    width: 35%;
+}
+
+.right-column2 img {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+#glazing1 {
+    margin: 2%;
+    width: 72%;
+    font-size: 16px;
+    border: 2px solid #C59A6D;
+    height: 30px;
+}
+
+
+/*********** Footer ************/
+.inner-footer{
+    width:100%;
+    background-color: #FEFBF7;
+    margin-top: 50px;
+}
+
+#sociallinks1{
+    width: 40px;
+    padding:10px;
+    float: left;
+    margin-left:60%;
+}
+
+#sociallinks2{
+    width: 40px;
+    padding:10px;
+    float: left;
+    margin-left:60%;
+}
+
+#sociallinks3{
+    width: 40px;
+    padding:10px;
+    float: left;
+    margin-left:60%;
+}
+
+#AboutBunBun{
+    margin-top:20px;
+    padding-left:50px;
+}
+
+#contactus{
+    margin-top:20px;
+    float: right;
+}
+
+#BunBunPrivacy{
+    margin-top:20px;
+    margin-left:20%;
+}
+
+.inner-footer ul{
+    padding-top:20px;
+    list-style: none;
+    text-align: right;
+    list-style: none;
+    width:90%;
+
+}
+
+.inner-footer ul li a{
+    color: #C59A6D;
+    font-size: 16px;
+    text-decoration: none;
+    float: left;
+}
+
+.inner-footer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*******************ViewCart********************/
+.allInfo{
+    max-width:100%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+}
+
+
+.cart-container {
+    width: 56%;
+    margin-left: 100px;
+    padding: 15px;
+}
+
+.productcolumn{
+    margin:10px;
+    width:70%;
+    position: relative;
+}
+
+.cart-item {
+    width: 35%;
+}
+
+.cart-price {
+    width: 10%;
+}
+
+.cart-quantity {
+    width: 10%;
+}
+
+.cart-glazing {
+    width: 25%;
+}
+
+.deletePh{
+    width: 15%;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+}
+
+.progressbar{
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+.listingimg1 {
+    width: 140px;
+    padding-top: 10px;
+    float:left;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.inline-child {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.inline-child2 {
+    display: inline-block;
+    float:right;
+    padding-right: 40px;
+}
+
+#product-name1, #product-name2{
+    padding: 30px;
+}
+
+.check-out-column{
+    width:30%;
+    height:300px;
+    border: 2px solid #C59A6D;
+    border-radius: 7px;
+    margin:30px;
+}
+
+.inline{
+    padding-left:10px;
+}
+
+.divider{
+    width: 80%;
+    margin:auto;
+    border: 1.2px solid #C59A6D;
+}
+
+.button3{
+    background-color: #C59A6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 1050px;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 4px;
+}
+
+
+.cart-quantity-input {
+    margin: 2%;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid #C59A6D;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.removeButton {
+  background-color: #C59A6D;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: 80%;
+  height:40%;
+  /*margin-top: 45px;*/
+  border-radius: 4px;
+}
+
+.cart-item-title{
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+}

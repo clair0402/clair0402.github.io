@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BunBun</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="SingleProduct.js" type="text/javascript"></script>
+</head>
+
+<body onload="onLoad();loadCart()">
+
+    <!-- Header -->
+    <div id="navigation-bar">
+        <div class="inner-navigation">
+            <a href="Home.html"> <img class="logo" src="logo.png" alt="The Website Logo"> </a>
+            <ul>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="">Delivery Area</a></li>
+                <li><a href="">Create Account</a></li>
+                <li><a href="">Log in</a></li>
+                <li id = "cart"><a href="Viewcart.html">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product & its info -->
+    <div class="container">
+    <!-- Product Section -->
+    <div class="left-column">
+        <img id = "original" src="Original.png" alt="The Original Cinnimon">
+        <p class="product-description2">The roll. The myth. The legend. That superior flavor and unmistakable, far-reaching aroma comes from Makara Cinnamon, which originates in the mountains of West Sumatra, Indonesia. Combined with our smooth, tender dough and fluffy signature frosting, this isn’t your average cinnamon roll.</p>
+    </div>
+
+    <div class="right-column">
+
+    <!-- Product Description -->
+        <div class="product-description">
+            <h2>The Original</h2>
+            <p class="smalltag" id="calories"> 284 Calories </p>
+            <p class="smalltag" id="fat"> 16g Total Fat </p>
+        </div>
+
+    <!-- Product Configuration -->
+        <div class="product-configuration">
+
+              <!-- Product Color -->
+            <section class="bun-glazing">
+                <label for="glazing1">Glazing</label>
+                <select name="glazing" id="glazing1" onchange="onLoad()">
+                    <option value="None">None</option>
+                    <option value="Sugar-milk">Sugar-milk</option>
+                    <option value="Vanilla-milk">Vanilla-milk</option>
+                    <option value="Double-chocolate">Double-chocolate</option>
+                </select>
+            </section>
+
+            <div class="price">
+                <p id = "priceN" >Price</p>
+                <p id = "aprice">$3.99</p>
+            </div>
+            <section class="bun-qty">
+                <label for="qty1">Qty</label>
+                <select name="qty" id="qty1" onchange="onLoad()">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </section>
+
+        </div>
+
+        <section class="AddtoCart">
+          <button id="button1" onclick="onClick()">Add to Cart</button>
+        </section>
+        <section class="AddtoCart">
+          <button class="button1">Buy It Now</button>
+        </section>
+
+    </div>
+    </div>
+
+
+    <!-- Tracker -->
+        <div class='ruler'>
+             <div class='cm'></div>
+             <div class='cm'></div>
+             <div class='cm'></div>
+             <div class='cm'></div>
+        </div>
+        <div class="Tracking"></div>
+
+
+    <!-- How is it made -->
+    <div class="container">
+        <div class="left-column">
+            <div class="process-description">
+                <h2>How is it made?</h2>
+                <p class="made"> Our best recipe that we’ve been serving friends and family on holidays and any other day for over 12 years.
+
+                Every morning, Sherry and Jason, the owners of BUNBUN will start bringing the eggs to room temperature also by placing them in a glass of warm water before adding them to the mix. They love to go the old-fashioned route and get those hands working by kneading the bread without a mixer.  </p>
+            </div>
+        </div>
+        <div class="right-column2">
+            <img src="process.png" alt="Process of Making">
+        </div>
+    </div>
+    <br/>
+
+
+    <!-- Footer -->
+    <div class="inner-footer">
+    <ul>
+        <li><a id="AboutBunBun" href="">About BunBun</a></li>
+        <li><a href=""> <img id="sociallinks1" src="fb.png" alt="Facebook icon"> </a><li>
+        <li><a href=""> <img id="sociallinks2" src="snapchat.png" alt="Snapchat icon"> </a><li>
+        <li><a href=""> <img id="sociallinks3" src="ins.png" alt="Instagram icon"> </a><li>
+        <li><a id="BunBunPrivacy" href="">BunBun @ 2018 Privacy</a></li>
+        <li><a id="contactus" href="">Contact Us</a></li>
+
+    </ul>
+    </div>
+</body>
+
+
+</html>
