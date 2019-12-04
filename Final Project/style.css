@@ -14,7 +14,7 @@ body{
 }
 
 .parallax01 {
-    height: 1200px;
+    height: 1100px;
     background: transparent;
     width: 100%;
 }
@@ -23,12 +23,33 @@ body{
     background: transparent;
 }
 
+.TypingBackground{
+    position: absolute;
+    width: 78%;
+    left:10%;
+    z-index: 0;
+}
+
+.TypingForeground{
+    position: absolute;
+    width: 80%;
+    left:10%;
+    z-index: 2;
+}
+
+.typeWoman{
+    position: absolute;
+    left: 45%;
+    width: 14%;
+    z-index: 1;
+}
+
 
 .info1{
     z-index: 2;
     position: relative;
     color: #fff;
-    padding: 300px 0px;
+    padding: 350px 0px 300px 0px;
     transition: 1s;
     font-family: 'DM Serif Display', serif;
     font-size: 24px;
