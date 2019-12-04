@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/BezierPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
+
+
+    <!--https://www.youtube.com/watch?v=TjBDjw0cZVo, https://www.youtube.com/watch?v=d34GsFz-HkY, https://www.w3schools.com/howto/howto_js_sticky_header.asp-->
+
+
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <!-- <div class="parallax01" data-parallax="scroll" data-z-index="1" data-image-src="try.gif" data-natural-width="1440" data-natural-height="774"> -->
+        <div class="parallax01">
+            <h1 class="text-center">Human Behavior <br> in Online Reviews</h1>
+            <h6 class="text-center">How people leave fake reviews differently from the real ones?</h6>
+            <img class="col-sm-12" src="try.gif">
+        </div>
+        <div class="parallax02" data-parallax="scroll" data-z-index="1"data-image-src="background.png" data-natural-width="1543" data-natural-height="1520">
+            <p class="info1 col-sm-6 text-center offset-sm-3">In offline shopping scenarios, we make purchase decisions based on a variety of factors.</p>
+           <!--  <div class="row info2">
+                <img class="col-sm-6" id="shopC" src="eye.gif">
+                <h2 class="col-sm-6 w-25">HOW A PRODUCT LOOKS</h2>
+            </div>
+            <div class="row info3">
+                <img class="col-sm-6" id="shopC" src="nose.gif">
+                <h2 class="col-sm-6 w-25">HOW IT SMELLS</h2>
+            </div>
+            <div class="row info4">
+                <img class="col-sm-6" id="shopC" src="hand.gif">
+                <h2 class="col-md-6 w-25">AND FEELS IN OUR HANDS...</h2>
+            </div> -->
+             <div class="info2 offset-sm-4">
+                <img class="col-sm-6" id="shopC" src="eye.gif">
+                <h2 class="col-sm-6 text-center">HOW A PRODUCT LOOKS</h2>
+            </div>
+            <div class="info3 offset-sm-4">
+                <img class="col-sm-6" id="shopC" src="nose.gif">
+                <h2 class="col-sm-6 text-center">HOW IT SMELLS</h2>
+            </div>
+            <div class="info4 offset-sm-4">
+                <img class="col-sm-6" id="shopC" src="hand.gif">
+                <h2 class="col-md-6 text-center">AND FEELS IN OUR HANDS...</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="laptop" id="laptop">
+        <img class= "blocker" src="desktop.png">
+    </div> -->
+
+    <!--<div class="content">
+        <div class="row justify-content-around">
+            <img class="amazon offset-md-1 col-md-4" src ="amazon.png">
+            <div class="col-md-4">
+                <p class="info5">During online shopping, all the interactions we could have in real life are gone.</p>
+                <p class="info6">Customer reviews and ratings are very important references for us.</p>
+                <p class="info7">However, do customer reviews and ratings tell people a truthful and objective story about the products?</p>
+                <div class="info8">
+                    <p id="large-h">NO.</p>
+                    <p>Not all reviews are left by real customers. Then: How do fake reviews differ from real reviews?</p>
+                    <a href="data.html"><p id="clickable">Explore The Differences >></p></br></a>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="laptop" id="laptop">
+        <script src="sentence.js"></script>
+        <div id="review"></div>
+    </div>
+    <div class="content">
+        <!-- <div class="row justify-content-around">
+            <div class="col-sm-6 offset-sm-4">
+                <p class="info5 text-center">During online shopping, all the interactions we could have in real life are gone.</p>
+                <p class="info6 text-center">Customer reviews and ratings are very important references for us.</p>
+                <p class="info7 text-center">However, do customer reviews and ratings tell people a truthful and objective story about the products?</p>
+                <div class="info8">
+                    <p id="large-h">NO.</p>
+                    <p>Not all reviews are left by real customers.</p>
+                    <p>Then: How do fake reviews differ from real reviews?</p>
+                    <a href="data.html"><p id="clickable">Explore The Differences >></p></br></a>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="row">
+            <div class="info5 col-md-4 offset-sm-4">
+                <p class="text-center">During online shopping, all the interactions we could have in real life are gone.</p>
+            </div>
+            <div class="info6  col-md-4 offset-sm-4">
+                <p class="text-center">     Customer reviews and ratings are very important references for us.      </p>
+            </div>
+            <div class="info7 col-md-4 offset-sm-4">
+                <p class="text-center">However, do customer reviews and ratings tell people a truthful and objective story about the products?</p>
+            </div>
+            <div class="info8 col-md-4 offset-sm-4">
+                    <p id="large-h" class="text-center">NO.</p>
+                    <p class="text-center">Not all reviews are left by real customers.</p>
+                    <p class="text-center">Then: How do fake reviews differ from real reviews?</p>
+                    <a href="data.html"><p class="text-center" id="clickable">Explore The Differences >></p></br></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>

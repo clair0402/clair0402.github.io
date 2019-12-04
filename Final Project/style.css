@@ -1,0 +1,274 @@
+
+body{
+    background-color: #181818;
+}
+.data-container{
+    background-color: #181818;
+}
+.container-fluid{
+    background: transparent;
+    background-color: #181818;
+    font-size: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.parallax01 {
+    height: 1200px;
+    background: transparent;
+    width: 100%;
+}
+.parallax02 {
+    height: 1543px;
+    background: transparent;
+}
+
+
+.info1{
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    padding: 300px 0px;
+    transition: 1s;
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    margin: 200px 0px;
+}
+
+
+h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+.false{
+    position:relative;
+
+}
+
+h3{
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: #4690B9;
+    /*transform: rotate(270deg);
+    transform-origin: bottom left;
+    margin-top: 200px;*/
+    position:absolute;
+    top: 70px;
+    left:70%;
+    -webkit-transform:rotate(-90deg);
+
+}
+
+.menu{
+    padding:30px;
+}
+
+.leftM{
+    padding-left: 30px;
+}
+
+#color{
+    color:#A7A7A7 ;
+}
+
+h4{
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px!important;
+    color: #A7A7A7;
+}
+
+h5{
+    font-family: 'DM Serif Display', serif;
+    color: #4F4F4F;
+    font-size: 18px!important;
+}
+
+h1{
+    font-family: 'DM Serif Display', serif;
+    color: #AAA;
+    font-size: 100px!important;
+    padding-top: 10%;
+}
+
+h6{
+    font-family: 'Helvetica', sans-serif;
+    color: #4F4F4F;
+    font-weight: bold !important;
+    font-size: 25px!important;
+    padding-top: 1%;
+}
+
+p{
+    font-family: 'DM Serif Display', serif;
+    color: #fff;
+}
+
+#description{
+    color: #E0E0E0;
+}
+
+#formatting{
+    line-height: 80%;
+}
+
+.result{
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.info2{
+    z-index: 2;
+    position: relative;
+    transition: 1s;
+}
+
+.footer{
+    padding: 50px;
+    background-color: #181818;
+}
+
+.col-sm-12{
+    background-color: #181818;
+}
+
+#shopC{
+    width: 100% \9;
+    height: 100%;
+    padding: 0 20%;
+
+}
+
+.info3{
+    z-index: 2;
+    position: relative;
+    padding: 120px 0px;
+    transition: 1s;
+}
+
+.info4{
+    z-index: 2;
+    position: relative;
+    padding: 70px 0px;
+    transition: 1s;
+}
+
+#large-h{
+    font-size: 70px;
+    color:#4690B9;
+}
+
+#clickable{
+    animation:blinkingText 0.8s infinite;
+}
+
+@keyframes blinkingText{
+    0%{     color: #fff;    }
+    50%{    color: transparent; }
+    100%{   color: #fff;    }
+}
+
+.laptop {
+  background: transparent;
+  color: #f1f1f1;
+  z-index:2;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.blocker{
+    width:100%;
+}
+
+.amazon{
+    width: 34%;
+    padding-top: 130px;
+    z-index:;
+}
+
+
+.info5{
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    padding: 200px 0px !important;
+    transition: 1s;
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+}
+
+.info6{
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    padding: 100px 0px;
+    transition: 1s;
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+}
+
+.info7{
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    padding: 200px 0px;
+    transition: 1s;
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+}
+
+.info8{
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    padding: 200px 0px;
+    transition: 1s;
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    margin: 5px;
+}
+
+
+.col-sm-10{
+    background-color: #181818;
+}
+
+.col-sm-2{
+    background-color: #181818;
+    padding: 40px;
+}
+
+.mx-1{
+    padding: 40px;
+}
+
+.graphs{
+    width:100%;
+    padding: 20px 0px;
+}
+
+.col-sm-6{
+    padding: 40px;
+}
+
+.transition-fade{
+    transition: .4s;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade{
+    opacity: 0;
+}
