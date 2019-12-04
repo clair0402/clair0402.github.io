@@ -4,8 +4,8 @@ var Ratings_TR = {
         data: {url:"Real_R.csv"},
         background:"transparent",
         mark: 'bar',
-        width:600,
-        height:400,
+        width:300,
+        height:300,
         "selection": {
           "highlight": {"type": "single", "empty": "none", "on": "mouseover"},
           "select": {"type": "multi"}
@@ -15,7 +15,10 @@ var Ratings_TR = {
           "fill": "#ffa500",
           "cursor": "pointer"
         },
-        title: "Review Rating & True Recommand",
+        title: {
+            "text":"Review Rating & True Recommand",
+            "color": "#fff"
+        },
         encoding: {
           x: {
             "bin": "false",
@@ -23,13 +26,13 @@ var Ratings_TR = {
             "type": "nominal",
             "sort": "-y",
             "orient": "right",
-            "axis": {title: 'Review Rating'}
+            "axis": {title: 'Review Rating',  "titleColor":"#fff"}
           },
           y: {
             "aggregate": "sum",
             "field": "ratings",
             "type": "quantitative",
-            "axis": {title: 'Numbers of True Recommand Reviews'}
+            "axis": {title: 'Numbers of True Recommand Reviews', "titleColor":"#fff"}
           },
           "tooltip": [{"aggregate": "sum","field": "ratings", "type": "quantitative"}],
           "color": {"value": "#ffa500"},
