@@ -28,8 +28,7 @@ var Ratings_TR = {
           x: {
             "bin": "false",
             "field": "ratings",
-            "type": "nominal",
-            "sort": "-y",
+            "type": "ordinal",
             "orient": "right",
             "axis": {title: 'Review Rating',  "titleColor":"#fff"}
           },
@@ -80,7 +79,6 @@ var Ratings_TD = {
             "bin": "false",
             "field": "ratings",
             "type": "ordinal",
-
             "orient": "right",
             "axis": {title: 'Review Rating', "titleColor":"#fff",labelColor:"#fff" }
           },
