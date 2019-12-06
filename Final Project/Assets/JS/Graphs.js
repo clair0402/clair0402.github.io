@@ -223,7 +223,7 @@ var Emotion_RD = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Review Emotion Poplarity & Real Don't Recommand",
+                  "text":"Emotion Poplarity & Real Don't Recommand",
                   "color": "#fff"
         },
         encoding: {
@@ -309,7 +309,7 @@ var Emotion_RR = {
 var Emotion_FD = {
         $schema: 'https://vega.github.io/schema/vega-lite/v2.0.json',
         description: 'A simple bar chart with embedded data.',
-        data: {url:"Assets/Data/E_Fake_D.csv"},
+        data: {url:"Assets/Data/EotionFakeD.csv"},
         background:"transparent",
         mark: 'bar',
         width:300,
