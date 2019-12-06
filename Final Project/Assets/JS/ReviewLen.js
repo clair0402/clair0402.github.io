@@ -20,7 +20,7 @@ var Length_RD = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Review Rating & Fake Recommand",
+                  "text":"Review Length & Fake Recommand",
                   "color": "#fff"
         },
         encoding: {
@@ -30,13 +30,13 @@ var Length_RD = {
             "type": "ordinal",
             "sort": "x",
             "orient": "right",
-            "axis": {title: 'Emotion Polarity', "titleColor":"#fff"}
+            "axis": {title: 'Emotion Polarity', "titleColor":"#fff", "labelColor":"#fff"}
           },
           y: {
             "aggregate": "count",
             "field": "review_length",
             "type": "quantitative",
-            "axis": {title: "Count of Reviews with Different Emotion Polarity", "titleColor":"#fff"}
+            "axis": {title: "Count of Reviews with Different Emotion Polarity", "titleColor":"#fff", "labelColor":"#fff" }
           },
           "tooltip": [{"aggregate": "count","field": "review_length", "type": "quantitative"}],
           "color": {"value": "#ffa500"},
@@ -79,7 +79,7 @@ var Length_RR = {
             "type": "ordinal",
             "sort": "x",
             "orient": "right",
-            "axis": {title: 'Emotion Polarity', "titleColor":"#fff","format": ".2f"}
+            "axis": {title: 'Emotion Polarity', "titleColor":"#fff"}
           },
           y: {
             "aggregate": "count",
@@ -130,13 +130,13 @@ var Length_FR = {
             "type": "ordinal",
             "sort": "x",
             "orient": "right",
-            "axis": {title: 'Emotion Polarity', "titleColor":"#fff","format": ".2f"}
+            "axis": {title: 'Emotion Polarity', "titleColor":"#fff", "labelColor":"#fff"}
           },
           y: {
             "aggregate": "count",
             "field": "review_length",
             "type": "quantitative",
-            "axis": {title: "Count of Reviews with Different Emotion Polarity", "titleColor":"#fff"}
+            "axis": {title: "Count of Reviews with Different Emotion Polarity", "titleColor":"#fff", "labelColor":"#fff"}
           },
           "tooltip": [{"aggregate": "count","field": "review_length", "type": "quantitative"}],
           "color": {"value": "#ffa500"},
@@ -181,7 +181,7 @@ var Length_FD = {
             "type": "ordinal",
             "sort": "x",
             "orient": "right",
-            "axis": {title: 'Emotion Polarity', "titleColor":"#fff","format": ".2f",  "labelColor":"#fff"}
+            "axis": {title: 'Emotion Polarity', "titleColor":"#fff", "labelColor":"#fff"}
           },
           y: {
             "aggregate": "count",
