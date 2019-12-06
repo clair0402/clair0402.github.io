@@ -2,6 +2,7 @@
 body{
     background-color: #181818;
 }
+
 .data-container{
     background-color: #181818;
 }
@@ -150,6 +151,7 @@ p{
     background-color: #181818;
 }
 
+
 .col-sm-12{
     background-color: #181818;
 }
@@ -269,7 +271,6 @@ p{
 
 .col-sm-2{
     background-color: #181818;
-    padding: 40px;
 }
 
 .mx-1{

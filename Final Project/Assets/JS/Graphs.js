@@ -6,7 +6,7 @@ var options={
 var Ratings_TR = {
         $schema: 'https://vega.github.io/schema/vega-lite/v2.0.json',
         description: 'A simple bar chart with embedded data.',
-        data: {url:"Real_R.csv"},
+        data: {url:"Assets/Data/Real_R.csv"},
         background:"transparent",
         mark: 'bar',
         width:300,
@@ -56,7 +56,7 @@ var Ratings_TR = {
 var Ratings_TD = {
         $schema: 'https://vega.github.io/schema/vega-lite/v2.0.json',
         description: 'A simple bar chart with embedded data.',
-        data: {url:"Real_D.csv"},
+        data: {url:"Assets/Data/Real_D.csv"},
         background:"transparent",
         mark: 'bar',
         width:300,
@@ -106,7 +106,7 @@ var Ratings_TD = {
 var Ratings_FD = {
         $schema: 'https://vega.github.io/schema/vega-lite/v2.0.json',
         description: 'A simple bar chart with embedded data.',
-        data: {url:"Fake_D.csv"},
+        data: {url:"Assets/Data/Fake_D.csv"},
         background:"transparent",
         mark: 'bar',
         width:300,
@@ -157,7 +157,7 @@ var Ratings_FD = {
 var Ratings_FR = {
         $schema: 'https://vega.github.io/schema/vega-lite/v2.0.json',
         description: 'A simple bar chart with embedded data.',
-        data: {url:"Fake_R.csv"},
+        data: {url:"Assets/Data/Fake_R.csv"},
         background:"transparent",
         mark: 'bar',
         width:300,

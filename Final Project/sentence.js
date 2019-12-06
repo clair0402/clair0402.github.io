@@ -52,8 +52,7 @@ function draw(){
   background(24);
   push();
   frameC += 0.1;
-  frameNum = ceil(frameC)
-  print(frameNum)
+  frameNum = ceil(frameC);
   if (frameNum%5 == 0) {
     w = 300;
     h = 80;
