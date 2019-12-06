@@ -203,3 +203,55 @@ var Ratings_FR = {
         }
       };
       vegaEmbed('#Ratings_FR', Ratings_FR, options);
+
+
+var Emotion_RD = {
+        $schema: 'https://vega.github.io/schema/vega-lite/v2.0.json',
+        description: 'A simple bar chart with embedded data.',
+        data: {url:"Assets/Data/E_Real_D.csv"},
+        background:"transparent",
+        mark: 'bar',
+        width:300,
+        height:300,
+        "selection": {
+          "highlight": {"type": "single", "empty": "none", "on": "mouseover"},
+          "select": {"type": "multi"}
+        },
+        "mark": {
+          "type": "bar",
+          "fill": "#ffa500",
+          "cursor": "pointer"
+        },
+        title: {
+                  "text":"Review Rating & Fake Recommand",
+                  "color": "#fff"
+        },
+        encoding: {
+          x: {
+            "bin": "false",
+            "field": "polar_norm",
+            "type": "ordinal",
+            "sort": "x",
+            "orient": "right",
+            "axis": {title: 'Emotion Polarity', "titleColor":"#fff","format": ".2f",labelColor:"#fff" }
+          },
+          y: {
+            "aggregate": "count",
+            "field": "polar_norm",
+            "type": "quantitative",
+            "axis": {title: "Count of Reviews with Different Emotion Polarity", "titleColor":"#fff", labelColor:"#fff" }
+          },
+          "tooltip": [{"aggregate": "count","field": "polar_norm", "type": "quantitative"}],
+          "color": {"value": "#ffa500"},
+          "fillOpacity": {
+             "condition": [
+              {
+                "selection": "highlight", "value": 1
+              }
+          ],
+          "value": 0.5
+          },
+        }
+      };
+      vegaEmbed('#Emotion_RD', Emotion_RD, options);
+

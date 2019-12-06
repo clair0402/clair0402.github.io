@@ -184,6 +184,7 @@ p{
 
 #clickable{
     animation:blinkingText 0.8s infinite;
+    padding-left: 30px;
 }
 
 @keyframes blinkingText{
