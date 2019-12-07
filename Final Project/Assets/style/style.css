@@ -6,6 +6,7 @@ body{
 .data-container{
     background-color: #181818;
 }
+
 .container-fluid{
     background: transparent;
     background-color: #181818;
@@ -19,6 +20,7 @@ body{
     background: transparent;
     width: 100%;
 }
+
 .parallax02 {
     height: 1543px;
     background: transparent;
@@ -45,7 +47,6 @@ body{
     z-index: 1;
 }
 
-
 .info1{
     z-index: 2;
     position: relative;
@@ -57,14 +58,11 @@ body{
     margin: 200px 0px;
 }
 
-
 h2{
     font-family: 'DM Serif Display', serif;
     font-size: 22px;
     color: #fff;
 }
-
-
 
 h3{
     font-family: 'DM Serif Display', serif;
@@ -91,7 +89,7 @@ h4{
 }
 
 a {
-  color: #EA873F !important;
+    color: #EA873F !important;
 }
 
 .menu{
@@ -105,12 +103,6 @@ a {
 #color{
     color:#A7A7A7 ;
 }
-
-/*h4{
-    font-family: 'DM Serif Display', serif;
-    font-size: 18px!important;
-    color: #A7A7A7;
-}*/
 
 h5{
     font-family: 'Helvetica', sans-serif;
@@ -147,7 +139,6 @@ p{
     line-height: 80%;
 }
 
-
 .info2{
     z-index: 2;
     position: relative;
@@ -158,7 +149,6 @@ p{
     padding: 50px;
     background-color: #181818;
 }
-
 
 .col-sm-12{
     background-color: #181818;
@@ -205,23 +195,23 @@ p{
 }
 
 .laptop {
-  background: transparent;
-  color: #f1f1f1;
-  z-index:2;
+    background: transparent;
+    color: #f1f1f1;
+    z-index:2;
 }
 
 .content {
-  padding: 16px;
+    padding: 16px;
 }
 
 .sticky + .content {
-  padding-top: 102px;
+    padding-top: 102px;
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .blocker{
