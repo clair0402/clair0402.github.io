@@ -53,7 +53,7 @@ function draw(){
   push();
   frameC += 0.1;
   frameNum = ceil(frameC);
-  if (frameNum%5 == 0) {
+  if (frameNum%10 == 0) {
     w = 300;
     h = 80;
     textS = random(20,30)
@@ -66,16 +66,6 @@ function draw(){
     boxes[i].show();
   }
 }
-
-function mouseDragged(){
-    w = 300;
-    h = 80;
-    textS = random(20,30)
-    var posx = random(0.2*width,width-0.2*width);
-    var posy = random(0,height);
-    boxes.push(new Box(posx, posy,w,h,textS,fillC))
-}
-
 
 function Box(x,y,w,h,textS,fillC){
     this.body = Bodies.rectangle(x, y, w, h);
