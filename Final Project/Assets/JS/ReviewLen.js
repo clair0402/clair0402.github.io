@@ -20,7 +20,7 @@ var Length_RD = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Review Length & Fake Recommand",
+                  "text":"Review Length & Fake Review",
                   "color": "#fff"
         },
         encoding: {
@@ -30,13 +30,13 @@ var Length_RD = {
             "type": "ordinal",
             "sort": "x",
             "orient": "right",
-            "axis": {title: 'Emotion Polarity', "titleColor":"#fff", "labelColor":"#fff"}
+            "axis": {title: 'Review Length', "titleColor":"#fff", "labelColor":"#fff"}
           },
           y: {
             "aggregate": "count",
             "field": "review_length",
             "type": "quantitative",
-            "axis": {title: "Count of Reviews with Different Emotion Polarity", "titleColor":"#fff", "labelColor":"#fff" }
+            "axis": {title: "Count of Real Don't Recommend Reviews", "titleColor":"#fff", "labelColor":"#fff" }
           },
           "tooltip": [{"aggregate": "count","field": "review_length", "type": "quantitative"}],
           "color": {"value": "#ffa500"},
@@ -69,7 +69,7 @@ var Length_RR = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Emotion Polarity & Real Recommand",
+                  "text":"Emotion Polarity & Real Review",
                   "color": "#fff"
         },
         encoding: {
@@ -79,13 +79,13 @@ var Length_RR = {
             "type": "ordinal",
             "sort": "x",
             "orient": "right",
-            "axis": {title: 'Emotion Polarity', "titleColor":"#fff", "labelColor":"#fff"}
+            "axis": {title: 'Review Length', "titleColor":"#fff", "labelColor":"#fff"}
           },
           y: {
             "aggregate": "count",
             "field": "review_length",
             "type": "quantitative",
-            "axis": {title: "Count of Reviews with Different Emotion Polarity", "titleColor":"#fff", "labelColor":"#fff"}
+            "axis": {title: "Count of Real Recommend Reviews", "titleColor":"#fff", "labelColor":"#fff"}
           },
           "tooltip": [{"aggregate": "count","field": "review_length", "type": "quantitative"}],
           "color": {"value": "#ffa500"},
@@ -120,7 +120,7 @@ var Length_FR = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Emotion Polarity & Fake Recommand",
+                  "text":"Emotion Polarity & Fake Review",
                   "color": "#fff"
         },
         encoding: {
@@ -130,13 +130,13 @@ var Length_FR = {
             "type": "ordinal",
             "sort": "x",
             "orient": "right",
-            "axis": {title: 'Emotion Polarity', "titleColor":"#fff", "labelColor":"#fff"}
+            "axis": {title: 'Review Length', "titleColor":"#fff", "labelColor":"#fff"}
           },
           y: {
             "aggregate": "count",
             "field": "review_length",
             "type": "quantitative",
-            "axis": {title: "Count of Reviews with Different Emotion Polarity", "titleColor":"#fff", "labelColor":"#fff"}
+            "axis": {title: "Count of Fake Recommend Reviews", "titleColor":"#fff", "labelColor":"#fff"}
           },
           "tooltip": [{"aggregate": "count","field": "review_length", "type": "quantitative"}],
           "color": {"value": "#ffa500"},
@@ -171,7 +171,7 @@ var Length_FD = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Emotion Polarity & Fake Recommand",
+                  "text":"Emotion Polarity & Fake Review",
                   "color": "#fff"
         },
         encoding: {
@@ -181,13 +181,13 @@ var Length_FD = {
             "type": "ordinal",
             "sort": "x",
             "orient": "right",
-            "axis": {title: 'Emotion Polarity', "titleColor":"#fff", "labelColor":"#fff"}
+            "axis": {title: 'Review Length', "titleColor":"#fff", "labelColor":"#fff"}
           },
           y: {
             "aggregate": "count",
             "field": "review_length",
             "type": "quantitative",
-            "axis": {title: "Count of Reviews with Different Emotion Polarity", "titleColor":"#fff", "labelColor":"#fff"}
+            "axis": {title: "Count of Fake Don't Recommend Reviews", "titleColor":"#fff", "labelColor":"#fff"}
           },
           "tooltip": [{"aggregate": "count","field": "review_length", "type": "quantitative"}],
           "color": {"value": "#ffa500"},
