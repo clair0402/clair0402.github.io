@@ -36,7 +36,7 @@ var Ratings_TR = {
             "aggregate": "sum",
             "field": "ratings",
             "type": "quantitative",
-            "axis": {title: 'Numbers of True Recommand Reviews', "titleColor":"#fff","labelColor":"#fff"}
+            "axis": {title: 'Numbers of Real Recommand Reviews', "titleColor":"#fff","labelColor":"#fff"}
           },
           "tooltip": [{"aggregate": "sum","field": "ratings", "type": "quantitative"}],
           "color": {"value": "#ffa500"},
@@ -86,7 +86,7 @@ var Ratings_TD = {
             "aggregate": "sum",
             "field": "ratings",
             "type": "quantitative",
-            "axis": {title: "Numbers of True Don't Recommand Reviews", "titleColor":"#fff", labelColor:"#fff" }
+            "axis": {title: "Numbers of Real Don't Recommand Reviews", "titleColor":"#fff", labelColor:"#fff" }
           },
           "tooltip": [{"aggregate": "sum","field": "ratings", "type": "quantitative"}],
           "color": {"value": "#ffa500"},
