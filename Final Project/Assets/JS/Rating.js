@@ -21,7 +21,7 @@ var Ratings_TR = {
           "cursor": "pointer"
         },
         title: {
-            "text":"Review Rating & True Recommand",
+            "text":"Rating & Real Reviews",
             "color": "#fff"
         },
         encoding: {
@@ -71,7 +71,7 @@ var Ratings_TD = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Review Rating & True Don't Recommand",
+                  "text":"Rating & Real Reviews",
                   "color": "#fff"
               },
         encoding: {
@@ -121,7 +121,7 @@ var Ratings_FD = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Review Rating & Fake Don't Recommand",
+                  "text":"Rating & Fake Reviews",
                   "color": "#fff"
               },
         encoding: {
@@ -172,7 +172,7 @@ var Ratings_FR = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Review Rating & Fake Recommand",
+                  "text":"Rating & Fake Reviews",
                   "color": "#fff"
               },
         encoding: {
