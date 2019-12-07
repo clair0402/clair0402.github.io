@@ -30,13 +30,13 @@ var Ratings_TR = {
             "field": "ratings",
             "type": "ordinal",
             "orient": "right",
-            "axis": {title: 'Review Rating',  "titleColor":"#fff"}
+            "axis": {title: 'Review Rating',  "titleColor":"#fff","labelColor":"#fff"}
           },
           y: {
             "aggregate": "sum",
             "field": "ratings",
             "type": "quantitative",
-            "axis": {title: 'Numbers of True Recommand Reviews', "titleColor":"#fff"}
+            "axis": {title: 'Numbers of True Recommand Reviews', "titleColor":"#fff","labelColor":"#fff"}
           },
           "tooltip": [{"aggregate": "sum","field": "ratings", "type": "quantitative"}],
           "color": {"value": "#ffa500"},

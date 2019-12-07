@@ -185,13 +185,13 @@ var Emotion_FR = {
             "type": "ordinal",
             "sort": "x",
             "orient": "right",
-            "axis": {title: 'Emotion Polarity', "titleColor":"#fff","format": ".2f"}
+            "axis": {title: 'Emotion Polarity', "titleColor":"#fff","format": ".2f", "labelColor":"#fff"}
           },
           y: {
             "aggregate": "count",
             "field": "polar_norm",
             "type": "quantitative",
-            "axis": {title: "Count of Reviews with Different Emotion Polarity", "titleColor":"#fff"}
+            "axis": {title: "Count of Reviews with Different Emotion Polarity", "titleColor":"#fff", "labelColor":"#fff"}
           },
           "tooltip": [{"aggregate": "count","field": "polar_norm", "type": "quantitative"}],
           "color": {"value": "#ffa500"},
