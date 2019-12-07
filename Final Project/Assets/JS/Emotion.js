@@ -23,7 +23,7 @@ var Emotion_RD = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Emotion Poplarity & Real Don't Recommand",
+                  "text":"Emotion Poplarity & Real Reviews",
                   "color": "#fff"
         },
         encoding: {
@@ -73,7 +73,7 @@ var Emotion_RR = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Emotion Polarity & Real Recommand",
+                  "text":"Emotion Polarity & Real Reviews",
                   "color": "#fff"
         },
         encoding: {
@@ -124,7 +124,7 @@ var Emotion_FD = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Emotion Polarity & Fake Don't Recommand",
+                  "text":"Emotion Polarity & Fake Reviews",
                   "color": "#fff"
         },
         encoding: {
@@ -175,7 +175,7 @@ var Emotion_FR = {
           "cursor": "pointer"
         },
         title: {
-                  "text":"Emotion Polarity & Fake Recommand",
+                  "text":"Emotion Polarity & Fake Reviews",
                   "color": "#fff"
         },
         encoding: {
