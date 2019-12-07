@@ -6,7 +6,7 @@ var options={
 var Ratings_TR = {
         $schema: 'https://vega.github.io/schema/vega-lite/v2.0.json',
         description: 'A simple bar chart with embedded data.',
-        data: {url:"../Assets/Data/Real_R.csv"},
+        data: {url:"../Data/Real_R.csv"},
         background:"transparent",
         mark: 'bar',
         width:300,
